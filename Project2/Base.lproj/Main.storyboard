@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,10 +23,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Sh-VW-SpS">
-                                <rect key="frame" x="87.5" y="144" width="200" height="100"/>
+                                <rect key="frame" x="87.5" y="100" width="200" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="7qJ-Hb-zat"/>
                                     <constraint firstAttribute="height" constant="100" id="eQg-QB-xjn"/>
+                                    <constraint firstAttribute="width" secondItem="1Sh-VW-SpS" secondAttribute="height" multiplier="2:1" id="f4T-Fa-h7w"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="us"/>
                                 <connections>
@@ -33,9 +35,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AE6-fi-8fs">
-                                <rect key="frame" x="87.5" y="324" width="200" height="100"/>
+                                <rect key="frame" x="87.5" y="230" width="200" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="2Iq-v0-Fl2"/>
+                                    <constraint firstAttribute="width" secondItem="AE6-fi-8fs" secondAttribute="height" multiplier="2:1" id="Dki-mQ-5Zi"/>
                                     <constraint firstAttribute="width" constant="200" id="TYE-vh-2n8"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="us"/>
@@ -44,10 +47,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vY1-iy-EV6">
-                                <rect key="frame" x="87.5" y="504" width="200" height="100"/>
+                                <rect key="frame" x="87.5" y="360" width="200" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="3Ok-hm-OIo"/>
                                     <constraint firstAttribute="width" constant="200" id="Df8-pv-Tc3"/>
+                                    <constraint firstAttribute="width" secondItem="vY1-iy-EV6" secondAttribute="height" multiplier="2:1" id="YrY-6e-LYi"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="us"/>
                                 <connections>
@@ -57,12 +61,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="vY1-iy-EV6" firstAttribute="height" secondItem="AE6-fi-8fs" secondAttribute="height" id="417-WD-SNg"/>
                             <constraint firstItem="vY1-iy-EV6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EQl-2A-V8p"/>
                             <constraint firstItem="1Sh-VW-SpS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fvy-Ma-b6i"/>
-                            <constraint firstItem="AE6-fi-8fs" firstAttribute="top" secondItem="1Sh-VW-SpS" secondAttribute="bottom" constant="80" id="M96-eA-BcT"/>
-                            <constraint firstItem="vY1-iy-EV6" firstAttribute="top" secondItem="AE6-fi-8fs" secondAttribute="bottom" constant="80" id="WuZ-OP-pn6"/>
+                            <constraint firstItem="vY1-iy-EV6" firstAttribute="width" secondItem="AE6-fi-8fs" secondAttribute="width" id="JJp-Td-pT9"/>
+                            <constraint firstItem="AE6-fi-8fs" firstAttribute="width" secondItem="1Sh-VW-SpS" secondAttribute="width" id="Kbu-P0-Lv8"/>
+                            <constraint firstItem="vY1-iy-EV6" firstAttribute="top" secondItem="AE6-fi-8fs" secondAttribute="bottom" constant="30" id="QnV-cy-QrT"/>
                             <constraint firstItem="AE6-fi-8fs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="brW-FQ-nOK"/>
-                            <constraint firstItem="1Sh-VW-SpS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="r4z-mq-wVv"/>
+                            <constraint firstItem="AE6-fi-8fs" firstAttribute="height" secondItem="1Sh-VW-SpS" secondAttribute="height" id="hE6-H2-CKF"/>
+                            <constraint firstItem="AE6-fi-8fs" firstAttribute="top" secondItem="1Sh-VW-SpS" secondAttribute="bottom" constant="30" id="tMm-gf-0gm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vY1-iy-EV6" secondAttribute="bottom" constant="20" id="utv-19-gim"/>
+                            <constraint firstItem="1Sh-VW-SpS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="zSx-Nh-mwu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1wN-w6-s5U"/>
@@ -74,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="137.18140929535232"/>
+            <point key="canvasLocation" x="1226" y="791"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8XU-bA-V5R">
