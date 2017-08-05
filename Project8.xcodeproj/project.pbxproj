@@ -12,6 +12,7 @@
 		5B5466B81F3653BD001FB0E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5466B61F3653BD001FB0E7 /* Main.storyboard */; };
 		5B5466BA1F3653BD001FB0E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5466B91F3653BD001FB0E7 /* Assets.xcassets */; };
 		5B5466BD1F3653BD001FB0E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5466BB1F3653BD001FB0E7 /* LaunchScreen.storyboard */; };
+		5B5466C51F365FC9001FB0E7 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5B5466C41F365FC9001FB0E7 /* level1.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5B5466B91F3653BD001FB0E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B5466BC1F3653BD001FB0E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B5466BE1F3653BD001FB0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B5466C41F365FC9001FB0E7 /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				5B5466B91F3653BD001FB0E7 /* Assets.xcassets */,
 				5B5466BB1F3653BD001FB0E7 /* LaunchScreen.storyboard */,
 				5B5466BE1F3653BD001FB0E7 /* Info.plist */,
+				5B5466C41F365FC9001FB0E7 /* level1.txt */,
 			);
 			path = Project8;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B5466BD1F3653BD001FB0E7 /* LaunchScreen.storyboard in Resources */,
+				5B5466C51F365FC9001FB0E7 /* level1.txt in Resources */,
 				5B5466BA1F3653BD001FB0E7 /* Assets.xcassets in Resources */,
 				5B5466B81F3653BD001FB0E7 /* Main.storyboard in Resources */,
 			);
@@ -266,7 +270,7 @@
 				DEVELOPMENT_TEAM = 34LN5HWMST;
 				INFOPLIST_FILE = Project8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hackingwithswift.Project8;
+				PRODUCT_BUNDLE_IDENTIFIER = Project8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -279,7 +283,7 @@
 				DEVELOPMENT_TEAM = 34LN5HWMST;
 				INFOPLIST_FILE = Project8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hackingwithswift.Project8;
+				PRODUCT_BUNDLE_IDENTIFIER = Project8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
