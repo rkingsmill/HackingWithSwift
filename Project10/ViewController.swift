@@ -16,6 +16,8 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         super.viewDidLoad()
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewPerson))
+        
+        collectionView?.reloadData()
 
     }
 
@@ -23,8 +25,8 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-//    MARK: -Datasource Delegate-
+    
+    //    MARK: -Datasource Delegate-
     
     override func collectionView(_ collectionView:
         UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -40,9 +42,10 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         cell.imageView.layer.borderWidth = 2
         cell.imageView.layer.cornerRadius = 3
         cell.layer.cornerRadius = 7
-            return cell
+        cell.name.text = person.name
+        return cell
     }
-//    MARK: -CollectionView Delegate-
+    //    MARK: -CollectionView Delegate-
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let person = people[indexPath.item]
